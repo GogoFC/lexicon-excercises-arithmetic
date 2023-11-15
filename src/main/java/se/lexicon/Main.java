@@ -8,7 +8,7 @@ public class Main {
         System.out.println("Enter two numbers to be calculated!");
         double number1 = numbers.nextDouble();
         double number2 = numbers.nextDouble();
-        double sum = number1 + number2;
+        double sum = addition(number1,number2);
         double division = number2 / number1;
         double subtraction = number1 - number2;
         double multiplication = number1 * number2;
@@ -17,6 +17,10 @@ public class Main {
         System.out.println(number1 + " times " + number2 + " is " +multiplication);
         System.out.println(number1 + " divided by " + number2 + " = " +division);
         System.out.println(number1 + " minus " + number2 + " is " +subtraction);
+    }
+    static double addition(double num1, double num2){
+        double result = num1 + num2;
+        return result;
     }
 
 }
